@@ -33,11 +33,19 @@ ordenar_preco = sorted(
    
 )
 
+# somar todos os valores da lista
+lista_somada = round(sum(p['preco'] for p in copia_produtos), 2)
 
-    
-print(*copia_produtos, sep='\n')
-print()
-print(*ordenar_nome, sep='\n')
-print()
-print(*ordenar_preco, sep='\n')
+print(lista_somada)
+
+# obter uma lista que contenha os preços somados
+lista_precos_somados = [p['preco'] for p in copia_produtos]
+
+print(lista_precos_somados)
+
+# print(*copia_produtos, sep='\n')
+# print()
+# print(*ordenar_nome, sep='\n')
+# print()
+# print(*ordenar_preco, sep='\n')
 
